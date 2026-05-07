@@ -9,11 +9,7 @@ from pyspark.sql.functions import (
 
 
 def normalize_dates(df, column_name):
-    # BUG FIX: data uses MM/dd/yyyy (e.g. "01/15/2020"), not dd/MM/yyyy.
-    # The old code tried yyyy-MM-dd first then dd/MM/yyyy, so dates like
-    # "03/15/2020" silently became null (month 15 is invalid under dd/MM)
-    # and "01/01/2020" was misclassified as dd/MM even though it "parsed".
-    # With ANSI mode off (set in create_spark_session), a format mismatch
+    
     # returns null and coalesce falls through to the next candidate.
     return df.withColumn(
         column_name,
