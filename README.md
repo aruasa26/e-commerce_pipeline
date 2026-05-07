@@ -112,7 +112,6 @@ rejected/
  ├── order_items/  
  ├── returns/  
 ```
-
 ## Design Decisions
 
 1. Explicit schema enforcement that ensures data consistency and prevents inference issues.
