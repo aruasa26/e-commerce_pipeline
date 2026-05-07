@@ -17,7 +17,7 @@ The pipeline performs:
 ```
 e-commerce_pipeline/
 │
-├── pipeline.py              # Main entry point
+├── pipeline.py              
 ├── requirements.txt
 │
 ├── src/
