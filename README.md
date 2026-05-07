@@ -115,7 +115,7 @@ rejected/
 
 ## Design Decisions
 
-1. Explicit schema enforcement ensures data consistency and prevents inference issues.
+1. Explicit schema enforcement that ensures data consistency and prevents inference issues.
 
 2. The pipeline is modular:
    ingestion.py- loading  
