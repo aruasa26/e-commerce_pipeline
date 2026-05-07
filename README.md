@@ -97,7 +97,7 @@ python3 pipeline.py
 - All outputs use overwrite mode for reproducibility  
 
 ## Output Structure
-
+```
 output/  
  ├── final_parquet/  
  ├── ranked_customers/  
@@ -111,7 +111,7 @@ rejected/
  ├── orders/  
  ├── order_items/  
  ├── returns/  
-
+```
 ## Design Decisions
 
 1. Explicit schema enforcement ensures data consistency and prevents inference issues.
