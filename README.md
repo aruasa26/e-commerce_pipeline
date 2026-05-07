@@ -17,9 +17,9 @@ The pipeline performs:
 ```
 e-commerce_pipeline/
 │
-├── pipeline.py              
-├── requirements.txt
-│
+├── data/                   # Input CSV files
+├── output/                 # Final outputs
+├── rejected/               # Rejected records
 ├── src/
 │   ├── ingestion.py
 │   ├── cleaning.py
@@ -36,9 +36,9 @@ e-commerce_pipeline/
 │   ├── test_enrichment.py
 │   ├── test_output.py
 │
-├── data/                    # Input CSV files
-├── output/                  # Final outputs
-├── rejected/                # Rejected records
+├── pipeline.py
+├── README.md
+├── requirements.txt
 ```
 
 ##  Setup Instructions
