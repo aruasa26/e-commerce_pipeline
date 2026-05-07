@@ -8,8 +8,7 @@ def create_spark_session():
         SparkSession.builder
         .appName("EcommerceETLPipeline")
         .master("local[*]")
-        # Disable ANSI mode so to_date/to_timestamp return null
-        # instead of throwing on unparseable strings. Required for
+        
         # normalize_dates coalesce-fallback logic to work correctly.
         .config("spark.sql.ansi.enabled", "false")
         .getOrCreate()
